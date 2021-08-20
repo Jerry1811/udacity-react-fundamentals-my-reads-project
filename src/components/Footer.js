@@ -9,7 +9,7 @@ const Footer = () => {
         backgroundColor: 'rgb(67, 141, 67, 0.747)',
       }}
     >
-      <a href="#" target="_blank" rel="noopener noreferrer">
+      <a href="#" rel="noopener noreferrer">
         <Icon
           name="home"
           size="huge"
@@ -21,7 +21,7 @@ const Footer = () => {
           }}
         />
       </a>
-      <a href="#" target="_blank" rel="noopener noreferrer">
+      <a href="https://github.com/Jerry1811/udacity-react-fundamentals-my-reads-project" target="_blank" rel="noopener noreferrer">
         <Icon
           name="github"
           size="huge"
