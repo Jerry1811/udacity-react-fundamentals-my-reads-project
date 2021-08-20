@@ -1,0 +1,205 @@
+html,
+body,
+.root {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+}
+
+.Profile-Image {
+  width: 100%;
+  height: 100%;
+}
+
+.List-Books-Title {
+  padding: 10px 0;
+  background-color: rgb(67, 141, 67, 0.747);
+  text-align: center;
+}
+
+.List-Books-Title h1 {
+  font-weight: 500;
+  margin: 0;
+  color: white;
+  text-shadow: 5px 5px 3px rgb(12, 12, 12);
+  font-size: 90px;
+}
+
+.List-Books-Content {
+  padding: 0 0 40px;
+  flex: 1;
+}
+
+@media (min-width: 600px) {
+  .Bookshelf {
+    padding: 0 20px 40px;
+  }
+}
+
+.Bookshelf-Title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  color: rgba(46, 46, 46, 0.801);
+  text-align: center;
+}
+
+.Bookshelf-Books {
+  text-align: center;
+  font-size: 25px;
+}
+
+.Open-Search {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+}
+
+.Open-Search button {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(67, 141, 67, 0.747);
+
+  background-image: url('./icons/add.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 28px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  font-size: 0;
+  outline: 0;
+  border: 0;
+}
+
+.Open-Search button:hover {
+  background-color: rgb(81, 129, 81);
+}
+
+.Search-Books-Bar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border: none;
+  z-index: 5;
+  display: flex;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 0 6px rgba(0, 0, 0, 0.23);
+}
+
+.Search-Books-Input-Wrapper {
+  flex: 1;
+  background: rgb(255, 255, 255);
+}
+
+.Search-Books-Bar input {
+  width: 100%;
+  padding: 15px 10px;
+  font-size: 1.25em;
+  border: none;
+  outline: none;
+}
+
+.Close-Search {
+  display: block;
+  top: 20px;
+  left: 15px;
+  width: 50px;
+  height: 55px;
+  background-image: url('./icons/arrow-back.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 0;
+  border: none;
+  outline: none;
+  background-color: rgb(228, 228, 228);
+}
+
+button:active {
+  border: red;
+  outline: none;
+}
+
+.Search-Books-Results {
+  padding: 80px 10px 20px;
+}
+
+.Books-Grid {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.Books-Grid li {
+  padding: 10px 15px;
+  text-align: left;
+}
+
+.Book {
+  width: 160px;
+  margin: 20px;
+  margin-bottom: 0px;
+}
+
+.Book-Title,
+.Book-authors {
+  font-size: 0.8em;
+}
+
+.Book-Title {
+  margin-top: 10px;
+}
+
+.Book-Authors {
+  color: rgb(94, 94, 94);
+}
+
+.Book-Top {
+  position: relative;
+  height: 200px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.Book-Shelf-Changer {
+  position: absolute;
+  right: 0;
+  bottom: -10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #60ac5d;
+  background-image: url('./icons/arrow-drop-down.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.Book-Shelf-Changer select {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.Book-Cover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  background: #eee;
+}
+
+.Book-Cover-Title {
+  padding: 20px 10px 0;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.Footer {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
